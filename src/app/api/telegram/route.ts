@@ -1,10 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-// const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-// const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || '';
-
-const TELEGRAM_BOT_TOKEN = "8555898660:AAGACcEFsN5akhBXgtBUowjscQpZl28CMJ8"
-const TELEGRAM_CHAT_ID = "6220290929"
+// Telegram Bot Configuration
+const TELEGRAM_BOT_TOKEN = "8555898660:AAGACcEFsN5akhBXgtBUowjscQpZl28CMJ8";
+const TELEGRAM_CHAT_ID = "6220290929";
 
 // Функція для отримання chat_id через getUpdates
 async function getChatId(): Promise<string | null> {
