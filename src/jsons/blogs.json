@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "author": "Ethan Jones",
+    "date": "Aug 1, 2025",
+    "title": "How Boundary Surveys Prevent Property Disputes",
+    "slug": "how-boundary-surveys-prevent-property-disputes",
+    "image": "/images/post-image-1.jpg",
+    "description": "We break down how accurate land surveys protect your ownership rights and bring clarity to property boundaries.",
+    "authorImage": "/images/author-image-1.jpg"
+  },
+  {
+    "id": 2,
+    "author": "Michael Carter",
+    "date": "Feb 2, 2025",
+    "title": "What You Should Know Before Building Your Property",
+    "slug": "what-you-should-know-before-building-your-property",
+    "image": "/images/post-image-2.jpg",
+    "description": "Starting a property project without proper knowledge can often lead to unexpected challenges. From understanding land surveys and legal boundaries to plan.",
+    "authorImage": "/images/author-image-2.jpg"
+  },
+  {
+    "id": 3,
+    "author": "Michael Carter",
+    "date": "Aug 10, 2025",
+    "title": "Civil Engineering Shouldn't Mistakes This Topics.",
+    "slug": "civil-engineering-shouldnt-mistakes-this-topics",
+    "image": "/images/post-image-3.jpg",
+    "description": "Civil engineering projects demand accuracy, and even small mistakes can turn into major risks. This blog explores some of the most overlooked topics in the field.",
+    "authorImage": "/images/author-image-3.jpg"
+  },
+  {
+    "id": 4,
+    "author": "Sophia Martinez",
+    "date": "Sep 15, 2025",
+    "title": "Topographic Surveys: The Foundation of Smart Site Planning",
+    "slug": "topographic-surveys-the-foundation-of-smart-site-planning",
+    "image": "/images/post-image-4.jpg",
+    "description": "Discover how topographic surveys give engineers and architects the data they need to design efficient and sustainable projects.",
+    "authorImage": "/images/author-image-1.jpg"
+  },
+  {
+    "id": 5,
+    "author": "David Lee",
+    "date": "Oct 5, 2025",
+    "title": "Why Drone Surveys Are Transforming Construction Projects",
+    "slug": "why-drone-surveys-are-transforming-construction-projects",
+    "image": "/images/post-image-5.jpg",
+    "description": "Learn how drones improve accuracy, reduce costs, and speed up data collection in modern surveying practices.",
+    "authorImage": "/images/author-image-2.jpg"
+  },
+  {
+    "id": 6,
+    "author": "Emily Johnson",
+    "date": "Nov 20, 2025",
+    "title": "Understanding ALTA/NSPS Land Title Surveys",
+    "slug": "understanding-alta-nsps-land-title-surveys",
+    "image": "/images/post-image-6.jpg",
+    "description": "A detailed guide to ALTA/NSPS surveys, explaining why lenders, developers, and title companies rely on them for property transactions.",
+    "authorImage": "/images/author-image-3.jpg"
+  }
+]

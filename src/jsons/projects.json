@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "title": "Rural Subdivision Layout",
+      "location": "Birmingham",
+      "description": "Completed full-scale surveying and lot plotting for an 80-acre conversion project, enabling phased development with clear easements.",
+      "image": "/images/constgruction-image-1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Rural Subdivision Layout",
+      "location": "Birmingham",
+      "description": "Completed full-scale surveying and lot plotting for an 80-acre conversion project, enabling phased development with clear easements.",
+      "image": "/images/constgruction-image-2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Drainage Design Project",
+      "location": "Manchester Suburb",
+      "description": "Engineered a detailed drainage and trench system for a high-rainfall zone, including runoff modeling, stormwater detention design.",
+      "image": "/images/constgruction-image-1.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Renovation Mapping Project",
+      "location": "Bristol",
+      "description": "Conducted 3D structural scans & retroactive blueprint creation for a historic estate renovation, ensuring accuracy.",
+      "image": "/images/constgruction-image-2.jpg"
+    }
+  ]
+  

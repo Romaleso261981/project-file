@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+@theme {
+    /* Global Font */
+    --font-primary: "Space Grotesk", sans-serif;
+    --font-secondary: "Inter", sans-serif;
+    /* Global Colors */
+    --color-primary: #FC5A11;
+    --color-primary-shade: #F6E1DA;
+    --color-primary-light-shade: #F5EBE6;
+    --color-secondary: #1D0900;
+    --color-secondary-light: #3B302B;
+    --color-offWhite: #FDF9F7;
+
+    /* Background */
+    --background-image-blog: linear-gradient(358deg,rgba(29, 9, 0, 0.1) 0%, rgba(29, 9, 0, 0.9) 100%),url('/images/blog-bg.jpg');
+
+    /* Font Size */
+    --text-168: 168px;
+    --text-168--line-height: 1.2;
+    --text-70: 70px;
+    --text-70--line-height: 1.2;
+    --text-65: 65px;
+    --text-65--line-height: 1.2;
+    --text-34: 34px;
+    --text-34--line-height: 1.2;
+
+}
+
+@layer base {
+    body {
+        @apply overflow-x-hidden;
+    }
+    html {
+        @apply text-sm xl:text-base scroll-smooth;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        @apply text-secondary capitalize font-primary font-bold transition-all duration-600;
+    }
+    h1{
+        @apply text-168;
+    }
+    h2{
+        @apply text-70;
+    }
+    h3{
+        @apply text-4xl md:text-5xl xl:text-65;
+    }
+    h4{
+        @apply text-34;
+    }
+    h5{
+        @apply text-3xl;
+    }
+    h6{
+        @apply text-2xl;
+    }
+    p,label,a,li {
+        @apply font-secondary text-base lg:text-lg text-secondary-light mb-0 transition-all duration-600;
+    }
+
+    ::selection {
+    @apply bg-primary-light-shade text-primary;
+    }
+
+    section {
+        @apply overflow-hidden py-14 md:py-16 xl:py-20 2xl:py-28;
+    }
+}
+
+@layer components{
+	.container {
+		@apply px-6 !max-w-full mx-auto 2xl:!max-w-[1720px];
+	}
+	.d2c_title{
+		@apply text-4xl lg:text-5xl xl:text-70 -tracking-[1px] md:-tracking-[2px] font-medium leading-[1];
+	}
+    .d2c_medium_title{
+		@apply text-2xl xl:text-3xl -tracking-[1px] md:-tracking-[2px] font-medium leading-[1];
+	}
+    .d2c_small_title{
+		@apply text-xl lg:text-2xl;
+	}
+
+    /* Footer */
+    .d2c_footer_link{
+        @apply text-secondary-light text-base xl:text-lg hover:text-primary transition-all duration-600 inline-block py-1;
+    }
+    .d2c_footer_title{
+        @apply text-3xl text-secondary capitalize mt-6 md:mt-0 mb-4 md:mb-6;
+    }
+    .d2c_social_icon a{
+        @apply inline-flex !text-white bg-primary relative w-9 h-9 z-10 overflow-hidden items-center justify-center text-sm hover:text-black transition-all duration-600 after:content-[''] before:-z-10 after:absolute after:w-10 after:h-10 after:translate-y-[100%] hover:after:translate-y-0 after:bg-secondary after:opacity-0 after:transition-all after:duration-600 hover:after:opacity-100 hover:after:transform hover:after:-rotate-15 after:-z-20 rounded-full before:rounded-full after:rounded-full;
+    }
+    .d2c_copyright p,.d2c_copyright li a{
+        @apply text-base xl:text-lg;
+    }
+
+    .form-label{
+        @apply text-2xl font-bold font-primary capitalize mb-2 inline-block -tracking-[1px];
+    }
+    .form-control{
+        @apply focus:border-primary-light-shade bg-[#FEFCFB] text-secondary-light font-primary font-normal text-base w-full py-3 lg:py-4 px-5 focus:outline-none placeholder:text-secondary-light/80 border border-primary-light-shade focus:border-secondary/20;
+    } 
+    
+
+    /* Scroll velocity css */
+    .parallax {
+        @apply relative overflow-hidden;
+    }
+    .scroller {
+        @apply flex gap-4 md:gap-6 whitespace-nowrap;
+    }
+
+    /* Testimonial Swiper Styles */
+    .testimonial-swiper {
+        @apply overflow-visible;
+    }
+
+}
+
+@layer utilities{
+    /* Counter Stroke CSS */
+    .text-stroke {
+        -webkit-text-stroke: 1px var(--color-secondary-light);
+    }
+    .text-stroke-transparent {
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* Slide Up Animation */
+    @keyframes slideUp {
+        from {
+            transform: translateY(5%);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    
+    .animate-slideUp {
+        animation: slideUp 1s ease-out forwards;
+    }
+}

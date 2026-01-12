@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Consultation & Site Details",
+    "description": "We begin with a discovery meeting a call to understand your goals, site location, and technical needs.",
+    "icon": "/images/process-icon-1.svg"
+  },
+  {
+    "id": 2,
+    "title": "On-Site Data Capture",
+    "description": "Our licensed surveyors visit your property using GPS, drones, industry-standard tools to collect real-time data.",
+    "icon": "/images/process-icon-2.svg"
+  },
+  {
+    "id": 3,
+    "title": "Planning and Drafting",
+    "description": "We create clear, regulation-ready plans including boundary maps, site layouts, and drainage designs.",
+    "icon": "/images/process-icon-3.svg"
+  },
+  {
+    "id": 4,
+    "title": "Final Review and Delivery",
+    "description": "We begin with a discovery meeting a call to understand your goals, site location, and technical needs.",
+    "icon": "/images/process-icon-4.svg"
+  }
+]

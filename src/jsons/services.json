@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Construction",
+        "slug": "construction",
+        "description": "We want every employee and trade for the partner to feel that they are part common good and cohesive team.",
+        "image": "/images/service-image-1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Architecture",
+        "slug": "architecture",
+        "description": "Our architects work closely with clients to understand their vision and transform it into a reality With cutting-edge tools.",
+        "image": "/images/service-image-2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Project Planning",
+        "slug": "project-planning",
+        "description": "We coordinate with all stakeholders, ensuring clear communication, efficient timelines, and cost-effective solutions.",
+        "image": "/images/service-image-3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Interior",
+        "slug": "interior",
+        "description": "Our team selects materials, colors, and layouts that enhance both aesthetics and usability, ensuring the space.",
+        "image": "/images/service-image-4.jpg"
+    }
+]

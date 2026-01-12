@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "James Whitmore",
+        "designation": "Lead Civil Engineer",
+        "image": "/images/team-member-image-1.png"
+    },
+    {
+        "id": 2,
+        "name": "Daniel Rodriguez",
+        "designation": "Environmental & Drainage Engineer",
+        "image": "/images/team-member-image-2.png"
+    },
+    {
+        "id": 3,
+        "name": "Olivia Linford",
+        "designation": "CAD and Drafting Manager",
+        "image": "/images/team-member-image-3.png"
+    },
+    {
+        "id": 4,
+        "name": "DMartin D’Souza",
+        "designation": "Licensed Land Surveyor",
+        "image": "/images/team-member-image-4.png"
+    }
+]

@@ -1,0 +1,23 @@
+[
+	{
+		"id": 1,
+		"question": "What types of land surveys do you offer?",
+		"answer": "We provides a full range of surveys including boundary surveys, topographic mapping, construction layout surveys, subdivision surveys, and legal documentation you needs."
+	},
+	{
+		"id": 2,
+		"question": "How long does a typical survey take",
+		"answer": "Most residential surveys are completed within a few days, while larger or more detailed projects may take one to two weeks."
+	},
+	{
+		"id": 3,
+		"question": "Do I need a land survey before buying or selling your property",
+		"answer": "Yes. A land survey provides an accurate picture of property boundaries, easements, and potential issues."
+	},
+	{
+		"id": 4,
+		"question": "Can you handle permitting and zoning requirements",
+		"answer": "Absolutely. Our team is experienced in local permitting and zoning regulations. We prepare the necessary documents, coordinate with municipalities."
+	}
+]
+  
