@@ -45,13 +45,50 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  // Функція для парсингу дати з російського формату
+  const parseDate = (dateString: string): Date | undefined => {
+    // Мапінг російських місяців
+    const monthMap: { [key: string]: string } = {
+      'янв': '01', 'фев': '02', 'мар': '03', 'апр': '04',
+      'май': '05', 'июн': '06', 'июл': '07', 'авг': '08',
+      'сен': '09', 'окт': '10', 'ноя': '11', 'дек': '12'
+    };
+
+    try {
+      // Формат: "1 авг 2025" або "15 сен 2025"
+      const parts = dateString.trim().split(' ');
+      if (parts.length === 3) {
+        const day = parts[0].padStart(2, '0');
+        const month = monthMap[parts[1].toLowerCase()];
+        if (!month) {
+          return undefined;
+        }
+        const year = parts[2];
+        const isoDate = `${year}-${month}-${day}T00:00:00.000Z`;
+        const parsed = new Date(isoDate);
+        // Перевірка чи дата валідна
+        if (!isNaN(parsed.getTime()) && parsed.getTime() > 0) {
+          return parsed;
+        }
+      }
+    } catch {
+      // Якщо помилка, повертаємо undefined
+      return undefined;
+    }
+    // Якщо не вдалося розпарсити, повертаємо undefined
+    return undefined;
+  };
+
   // Динамічні сторінки блогів
-  const blogPages: MetadataRoute.Sitemap = blogsData.map((blog) => ({
-    url: `${baseUrl}/blogs/${blog.slug}/`,
-    lastModified: new Date(blog.date),
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-  }));
+  const blogPages: MetadataRoute.Sitemap = blogsData.map((blog) => {
+    const lastModified = parseDate(blog.date);
+    return {
+      url: `${baseUrl}/blogs/${blog.slug}/`,
+      ...(lastModified && { lastModified }),
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    };
+  });
 
   // Динамічні сторінки послуг
   const servicePages: MetadataRoute.Sitemap = servicesData.map((service) => ({
