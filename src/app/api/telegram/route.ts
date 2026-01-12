@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '8555898660:AAGACcEFsN5akhBXgtBUowjscQpZl28CMJ8';
+const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || '';
 
 // Функція для отримання chat_id через getUpdates
@@ -26,6 +26,14 @@ async function getChatId(): Promise<string | null> {
 
 export async function POST(request: NextRequest) {
   try {
+    // Перевірка наявності токену бота
+    if (!TELEGRAM_BOT_TOKEN) {
+      return NextResponse.json(
+        { error: 'TELEGRAM_BOT_TOKEN не налаштовано. Будь ласка, додайте токен у файл .env.local' },
+        { status: 500 }
+      );
+    }
+
     const body = await request.json();
     const { name, email, phone, service, message } = body;
 
