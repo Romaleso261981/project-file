@@ -66,40 +66,65 @@ ${message}
     // Отримуємо chat_id
     let chatId = TELEGRAM_CHAT_ID;
     
-    // Якщо chat_id не вказано, спробуємо отримати через getUpdates
+    // Якщо chat_id не вказано або не працює, спробуємо отримати через getUpdates
     if (!chatId) {
       chatId = await getChatId() || '';
     }
 
-    if (!chatId) {
+    // Функція для відправки повідомлення
+    const sendMessage = async (targetChatId: string) => {
+      const telegramApiUrl = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+      
+      const response = await fetch(telegramApiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          chat_id: targetChatId,
+          text: telegramMessage,
+          parse_mode: 'HTML',
+        }),
+      });
+
+      return await response.json();
+    };
+
+    // Спробуємо відправити з вказаним chat_id
+    if (chatId) {
+      const data = await sendMessage(chatId);
+      
+      // Якщо помилка "chat not found", спробуємо отримати актуальний chat_id
+      if (!data.ok && data.description?.includes('chat not found')) {
+        console.log('Chat ID не знайдено, спробуємо отримати через getUpdates...');
+        chatId = await getChatId() || '';
+        
+        if (chatId) {
+          const retryData = await sendMessage(chatId);
+          if (!retryData.ok) {
+            console.error('Telegram API error:', retryData);
+            return NextResponse.json(
+              { error: 'Помилка відправки повідомлення в Telegram', details: retryData.description },
+              { status: 500 }
+            );
+          }
+        } else {
+          return NextResponse.json(
+            { error: 'Chat ID не знайдено. Будь ласка, надішліть будь-яке повідомлення боту в Telegram, щоб він міг отримати ваш chat_id.' },
+            { status: 400 }
+          );
+        }
+      } else if (!data.ok) {
+        console.error('Telegram API error:', data);
+        return NextResponse.json(
+          { error: 'Помилка відправки повідомлення в Telegram', details: data.description },
+          { status: 500 }
+        );
+      }
+    } else {
       return NextResponse.json(
-        { error: 'Chat ID не знайдено. Будь ласка, надішліть будь-яке повідомлення боту або вкажіть TELEGRAM_CHAT_ID в змінних оточення.' },
+        { error: 'Chat ID не знайдено. Будь ласка, надішліть будь-яке повідомлення боту в Telegram, щоб він міг отримати ваш chat_id.' },
         { status: 400 }
-      );
-    }
-
-    // Відправляємо повідомлення у Telegram
-    const telegramApiUrl = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
-    
-    const response = await fetch(telegramApiUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        chat_id: chatId,
-        text: telegramMessage,
-        parse_mode: 'HTML',
-      }),
-    });
-
-    const data = await response.json();
-
-    if (!response.ok || !data.ok) {
-      console.error('Telegram API error:', data);
-      return NextResponse.json(
-        { error: 'Помилка відправки повідомлення в Telegram', details: data.description },
-        { status: 500 }
       );
     }
 
