@@ -10,7 +10,7 @@ export default function ServicesSection() {
     return (
         <section>
             <div className="container">
-                <SectionHeader title="What We Offer" colors={{"2": "#FC5A11"}} />
+                <SectionHeader title="Что мы предлагаем" colors={{"2": "#FC5A11"}} />
 
                 <div className="grid grid-cols-12 gap-4 md:gap-6">
                     {ServicesData.slice(0, 3).map((item, idx, arr) => {

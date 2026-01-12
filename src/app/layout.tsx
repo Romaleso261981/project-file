@@ -16,15 +16,15 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "SurveyRidge - Property Surveyors Next.js Website Template",
-  description: "Property surveyors nextjs template – SurveyRidge simplifies website creation for survey firms. Build a professional property site easily today.",
+  title: "SurveyRidge - Шаблон сайта геодезистов недвижимости Next.js",
+  description: "Шаблон сайта геодезистов недвижимости Next.js – SurveyRidge упрощает создание сайтов для геодезических фирм. Создайте профессиональный сайт недвижимости легко уже сегодня.",
   robots: "index, follow",
 	icons: {
 		icon: Favicon.src
 	},
 	openGraph: {
-		title: "SurveyRidge - Property Surveyors Next.js Website Template",
-		description: "Property surveyors nextjs template – SurveyRidge simplifies website creation for survey firms. Build a professional property site easily today.",
+		title: "SurveyRidge - Шаблон сайта геодезистов недвижимости Next.js",
+		description: "Шаблон сайта геодезистов недвижимости Next.js – SurveyRidge упрощает создание сайтов для геодезических фирм. Создайте профессиональный сайт недвижимости легко уже сегодня.",
 		url: "https://designtocodes.com/product/surveyridge-property-surveyors-next-js-website-template",
 		images: [
 			{
@@ -40,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <body
         className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}
       >

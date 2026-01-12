@@ -29,30 +29,30 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
     {
         id: 1,
-        quote: "Professional, precise, and dependable. The team delivered detailed site layouts that helped us move forward with confidence. They handled everything - from the fieldwork to the final plans.",
-        authorName: "Arlene McCoy",
-        authorTitle: "CEO at saira",
+        quote: "Профессионально, точно и надежно. Команда предоставила детальные планировки участков, которые помогли нам двигаться вперед с уверенностью. Они справились со всем - от полевых работ до финальных планов.",
+        authorName: "Арлин Маккой",
+        authorTitle: "Генеральный директор в saira",
         authorImage: clientImage1
     },
     {
         id: 2,
-        quote: "Outstanding service and attention to detail. Their expertise in land surveying and site planning exceeded our expectations. The team was responsive and delivered results on time.",
-        authorName: "John Smith",
-        authorTitle: "Project Manager at BuildCo",
+        quote: "Превосходный сервис и внимание к деталям. Их экспертиза в землеустройстве и планировании участков превзошла наши ожидания. Команда была отзывчивой и предоставила результаты вовремя.",
+        authorName: "Джон Смит",
+        authorTitle: "Менеджер проектов в BuildCo",
         authorImage: clientImage2
     },
     {
         id: 3,
-        quote: "Highly professional team with excellent technical skills. They provided comprehensive drainage solutions and site analysis that made our project a success.",
-        authorName: "Sarah Johnson",
-        authorTitle: "Director at Urban Developers",
+        quote: "Высокопрофессиональная команда с отличными техническими навыками. Они предоставили комплексные решения по дренажу и анализу участка, которые сделали наш проект успешным.",
+        authorName: "Сара Джонсон",
+        authorTitle: "Директор в Urban Developers",
         authorImage: clientImage3
     },
     {
         id: 4,
-        quote: "Exceptional quality and reliability. Their surveying work was thorough and accurate, helping us avoid costly mistakes during construction. Highly recommend their services.",
-        authorName: "Michael Brown",
-        authorTitle: "CEO at Construct Ltd",
+        quote: "Исключительное качество и надежность. Их геодезические работы были тщательными и точными, помогая нам избежать дорогостоящих ошибок во время строительства. Очень рекомендую их услуги.",
+        authorName: "Майкл Браун",
+        authorTitle: "Генеральный директор в Construct Ltd",
         authorImage: clientImage4
     }
 ]
@@ -72,7 +72,7 @@ export default function Testimonial() {
                     {/* Left Side - Heading */}
                     <div className="lg:col-span-4">
                         <h2 className="d2c_title uppercase leading-tight">
-                            What our <span className="text-primary">clients say</span>
+                            Что говорят наши <span className="text-primary">клиенты</span>
                         </h2>
                     </div>
 
@@ -129,7 +129,7 @@ export default function Testimonial() {
                                         ))}
                                     </div>
                                 </div>
-                                <p data-aos="fade-up">from <CountUp to={500} duration={2} separator="," />+ reviews</p>
+                                <p data-aos="fade-up">из <CountUp to={500} duration={2} separator="," />+ отзывов</p>
                             </div>
                         </div>
 

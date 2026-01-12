@@ -6,7 +6,7 @@ import { Metadata } from 'next';
 import React from 'react'
 
 export const metadata: Metadata = {
-  title: "Projects - SurveyRidge",
+  title: "Проекты - SurveyRidge",
 };
 
 export default function Projects() {

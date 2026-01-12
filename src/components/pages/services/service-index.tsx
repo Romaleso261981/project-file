@@ -9,7 +9,7 @@ export default function ServiceIndex() {
         <section>
             <div className="container">
                 <SectionHeader
-                    title='Professional Services'
+                    title='Профессиональные услуги'
                     colors={{ "1+": "#FC5A11" }}
                     titleClass='!justify-center'
                     className='mb-8 xl:mb-16'

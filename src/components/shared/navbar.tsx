@@ -37,11 +37,11 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { href: '/', label: 'Home' },
-        { href: '/about', label: 'About' },
-        { href: '/projects', label: 'Projects' },
-        { href: '/services', label: 'services' },
-        { href: '/blogs', label: 'blogs' }
+        { href: '/', label: 'Главная' },
+        { href: '/about', label: 'О нас' },
+        { href: '/projects', label: 'Проекты' },
+        { href: '/services', label: 'Услуги' },
+        { href: '/blogs', label: 'Блог' }
     ];
 
     const [scrolled, setScrolled] = useState(false);
@@ -89,12 +89,12 @@ const Navbar = () => {
 
                 {/* CTA Button - Medium screens (center-right) */}
                 <div className="hidden md:flex lg:hidden ml-auto mr-4">
-                    <PrimaryButton text="Contact Us" href='/contact'/>
+                    <PrimaryButton text="Связаться с нами" href='/contact'/>
                 </div>
 
                 {/* CTA Button - Large screens */}
                 <div className="hidden lg:block">
-                   <PrimaryButton text="Contact Us" href='/contact'/>
+                   <PrimaryButton text="Связаться с нами" href='/contact'/>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -164,7 +164,7 @@ const Navbar = () => {
                             onClick={() => setMenuOpen(false)}
                             className="mt-2 px-5 py-2 bg-primary rounded-full text-white shadow-xl text-lg font-medium font-primary text-center md:hidden"
                         >
-                            Book A Call
+                            Записаться на звонок
                         </Link>
                     </div>
                 </div>

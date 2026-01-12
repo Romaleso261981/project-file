@@ -26,10 +26,10 @@ export default function ContactForm() {
 
     const onSubmit = async () => {
         try {
-            Toast.success('Your information is submitted!');
+            Toast.success('Ваша информация отправлена!');
             reset();
         } catch {
-            Toast.error('Something went wrong. Please try again.');
+            Toast.error('Что-то пошло не так. Пожалуйста, попробуйте снова.');
         }
     };
 
@@ -38,30 +38,30 @@ export default function ContactForm() {
             {/* Name and email */}
             <div className="grid grid-cols-1 gap-4 md:grid-cols-6" data-aos="fade-up" data-aos-delay="500">
                 <div className="md:col-span-3">
-                    <label className="form-label">Full Name</label>
+                    <label className="form-label">Полное имя</label>
                     <input
                         type="text"
                         className="form-control"
-                        placeholder="Enter first name"
+                        placeholder="Введите имя"
                         {...register("nameRequired", { required: true })}
                     />
                     {errors.nameRequired && (
                         <span className="mt-2 inline-block font-primary text-red-400 text-sm">
-                            This field is required
+                            Это поле обязательно
                         </span>
                     )}
                 </div>
                 <div className="md:col-span-3">
-                    <label className="form-label">Email Address</label>
+                    <label className="form-label">Адрес электронной почты</label>
                     <input
                         type="email"
                         className="form-control"
-                        placeholder="Enter email address"
+                        placeholder="Введите адрес электронной почты"
                         {...register("emailRequired", { required: true })}
                     />
                     {errors.emailRequired && (
                         <span className="mt-2 inline-block font-primary text-red-400 text-sm">
-                            This field is required
+                            Это поле обязательно
                         </span>
                     )}
                 </div>
@@ -70,34 +70,34 @@ export default function ContactForm() {
             {/* Phone + Services */}
             <div className="grid grid-cols-1 gap-4 md:grid-cols-6" data-aos="fade-up" data-aos-delay="500">
                 <div className="col-span-3">
-                    <label className="form-label">Phone Number</label>
+                    <label className="form-label">Номер телефона</label>
                     <input
                         type="tel"
                         className="form-control"
-                        placeholder="Enter phone number"
+                        placeholder="Введите номер телефона"
                         {...register("numberRequired", { required: true })}
                     />
                     {errors.numberRequired && (
                         <span className="mt-2 inline-block font-primary text-red-400 text-sm">
-                            This field is required
+                            Это поле обязательно
                         </span>
                     )}
                 </div>
                 <div className="col-span-3">
-                <label className="form-label">Service</label>
+                <label className="form-label">Услуга</label>
                     <div className="relative w-full">
                         <select
-                            {...register('serviceRequired', { required: 'Please select this field' })}
+                            {...register('serviceRequired', { required: 'Пожалуйста, выберите это поле' })}
                             defaultValue=""
                             className={`form-control appearance-none ${selectedService !== '' ? 'text-secondary-light' : 'text-secondary-light/80'}`}
                         >
                             <option value="" disabled>
-                                Select Service
+                                Выберите услугу
                             </option>
-                            <option value="Construction">Construction</option>
-                            <option value="Architecture">Architecture</option>
-                            <option value="Project Planning">Project Planning</option>
-                            <option value="Interior">Interior</option>
+                            <option value="Construction">Строительство</option>
+                            <option value="Architecture">Архитектура</option>
+                            <option value="Project Planning">Планирование проектов</option>
+                            <option value="Interior">Интерьер</option>
                         </select>
 
                         {/* Icon */}
@@ -110,16 +110,16 @@ export default function ContactForm() {
 
             {/* Message */}
             <div data-aos="fade-up" data-aos-delay="600">
-                <label className="form-label">Messages</label>
+                <label className="form-label">Сообщение</label>
                 <textarea
                     rows={4}
                     className="form-control"
-                    placeholder="Enter your message"
+                    placeholder="Введите ваше сообщение"
                     {...register("messageRequired", { required: true })}
                 ></textarea>
                 {errors.messageRequired && (
                     <span className="mt-2 inline-block font-primary text-red-400 text-sm">
-                        This field is required
+                        Это поле обязательно
                     </span>
                 )}
             </div>
@@ -127,7 +127,7 @@ export default function ContactForm() {
             {/* Submit */}
             <div data-aos="fade-up" data-aos-delay="700">
                 <PrimaryButton
-                    text={isSubmitting ? "Send" : "Send Now"}
+                    text={isSubmitting ? "Отправить" : "Отправить сейчас"}
                     as="button"
                     type="submit"
                 />

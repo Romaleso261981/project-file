@@ -1,23 +1,23 @@
 [
 	{
 		"id": 1,
-		"question": "What types of land surveys do you offer?",
-		"answer": "We provides a full range of surveys including boundary surveys, topographic mapping, construction layout surveys, subdivision surveys, and legal documentation you needs."
+		"question": "Какие типы земельных съемок вы предлагаете?",
+		"answer": "Мы предоставляем полный спектр съемок, включая межевые съемки, топографическое картирование, съемки строительной планировки, съемки подразделений и необходимую юридическую документацию."
 	},
 	{
 		"id": 2,
-		"question": "How long does a typical survey take",
-		"answer": "Most residential surveys are completed within a few days, while larger or more detailed projects may take one to two weeks."
+		"question": "Сколько времени занимает типичная съемка",
+		"answer": "Большинство жилых съемок завершаются в течение нескольких дней, в то время как более крупные или более детальные проекты могут занять от одной до двух недель."
 	},
 	{
 		"id": 3,
-		"question": "Do I need a land survey before buying or selling your property",
-		"answer": "Yes. A land survey provides an accurate picture of property boundaries, easements, and potential issues."
+		"question": "Нужна ли мне земельная съемка перед покупкой или продажей недвижимости",
+		"answer": "Да. Земельная съемка предоставляет точную картину границ недвижимости, сервитутов и потенциальных проблем."
 	},
 	{
 		"id": 4,
-		"question": "Can you handle permitting and zoning requirements",
-		"answer": "Absolutely. Our team is experienced in local permitting and zoning regulations. We prepare the necessary documents, coordinate with municipalities."
+		"question": "Можете ли вы обработать требования по разрешениям и зонированию",
+		"answer": "Абсолютно. Наша команда имеет опыт работы с местными разрешениями и правилами зонирования. Мы подготавливаем необходимые документы, координируем работу с муниципалитетами."
 	}
 ]
   

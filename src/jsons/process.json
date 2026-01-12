@@ -1,26 +1,26 @@
 [
   {
     "id": 1,
-    "title": "Consultation & Site Details",
-    "description": "We begin with a discovery meeting a call to understand your goals, site location, and technical needs.",
+    "title": "Консультация и детали участка",
+    "description": "Мы начинаем с ознакомительной встречи или звонка, чтобы понять ваши цели, расположение участка и технические потребности.",
     "icon": "/images/process-icon-1.svg"
   },
   {
     "id": 2,
-    "title": "On-Site Data Capture",
-    "description": "Our licensed surveyors visit your property using GPS, drones, industry-standard tools to collect real-time data.",
+    "title": "Сбор данных на месте",
+    "description": "Наши лицензированные геодезисты посещают вашу недвижимость, используя GPS, дроны и инструменты промышленного стандарта для сбора данных в реальном времени.",
     "icon": "/images/process-icon-2.svg"
   },
   {
     "id": 3,
-    "title": "Planning and Drafting",
-    "description": "We create clear, regulation-ready plans including boundary maps, site layouts, and drainage designs.",
+    "title": "Планирование и чертежи",
+    "description": "Мы создаем четкие, готовые к регулированию планы, включая карты границ, планировки участков и проекты дренажа.",
     "icon": "/images/process-icon-3.svg"
   },
   {
     "id": 4,
-    "title": "Final Review and Delivery",
-    "description": "We begin with a discovery meeting a call to understand your goals, site location, and technical needs.",
+    "title": "Финальный обзор и доставка",
+    "description": "Мы проводим финальный обзор всех документов и доставляем готовые материалы с полной документацией и рекомендациями.",
     "icon": "/images/process-icon-4.svg"
   }
 ]

@@ -1,30 +1,30 @@
 [
     {
         "id": 1,
-        "name": "Construction",
+        "name": "Строительство",
         "slug": "construction",
-        "description": "We want every employee and trade for the partner to feel that they are part common good and cohesive team.",
+        "description": "Мы хотим, чтобы каждый сотрудник и торговый партнер чувствовали, что они являются частью общего блага и сплоченной команды.",
         "image": "/images/service-image-1.jpg"
     },
     {
         "id": 2,
-        "name": "Architecture",
+        "name": "Архитектура",
         "slug": "architecture",
-        "description": "Our architects work closely with clients to understand their vision and transform it into a reality With cutting-edge tools.",
+        "description": "Наши архитекторы тесно сотрудничают с клиентами, чтобы понять их видение и воплотить его в реальность с помощью передовых инструментов.",
         "image": "/images/service-image-2.jpg"
     },
     {
         "id": 3,
-        "name": "Project Planning",
+        "name": "Планирование проектов",
         "slug": "project-planning",
-        "description": "We coordinate with all stakeholders, ensuring clear communication, efficient timelines, and cost-effective solutions.",
+        "description": "Мы координируем работу со всеми заинтересованными сторонами, обеспечивая четкую коммуникацию, эффективные сроки и экономически выгодные решения.",
         "image": "/images/service-image-3.jpg"
     },
     {
         "id": 4,
-        "name": "Interior",
+        "name": "Интерьер",
         "slug": "interior",
-        "description": "Our team selects materials, colors, and layouts that enhance both aesthetics and usability, ensuring the space.",
+        "description": "Наша команда выбирает материалы, цвета и планировки, которые улучшают как эстетику, так и функциональность, обеспечивая пространство.",
         "image": "/images/service-image-4.jpg"
     }
 ]

@@ -11,13 +11,13 @@ export default function HomeBlog() {
                 <div className="grid lg:grid-cols-2 gap-4 md:gap-6">
                     <div className='px-16 py-10 md:py-24 bg-blog bg-no-repeat bg-cover bg-center text-center lg:text-left'>
                         <SectionHeader
-                            title="Insights From the Field with the professionals"
+                            title="Инсайты с поля от профессионалов"
                             colors={{ "5+": "#FC5A11" }}
                             titleClass='text-offWhite !justify-center lg:!justify-start'
                             className='!mb-6'
                         />
                         <PrimaryButton
-                            text="All Blogs"
+                            text="Все блоги"
                             href="/blogs"
                         />
                     </div>

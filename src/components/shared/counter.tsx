@@ -14,11 +14,11 @@ interface CounterProps {
 }
 
 const items: CounterItem[] = [
-  { value: 10, suffix: "K", label: "Project Done", duration: 1, delay: 400 },
-  { value: 16, suffix: "K", label: "Happy Client", duration: 1, delay: 500 },
-  { value: 98, suffix: "%", label: "Client Satisfied", duration: 1, delay: 600 },
-  { value: 13, suffix: "K", label: "Total employed", duration: 1, delay: 700 },
-  { value: 97, suffix: "%", label: "delivered budget", duration: 1, delay: 800 },
+  { value: 10, suffix: "K", label: "Проектов выполнено", duration: 1, delay: 400 },
+  { value: 16, suffix: "K", label: "Довольных клиентов", duration: 1, delay: 500 },
+  { value: 98, suffix: "%", label: "Клиентов довольны", duration: 1, delay: 600 },
+  { value: 13, suffix: "K", label: "Всего сотрудников", duration: 1, delay: 700 },
+  { value: 97, suffix: "%", label: "в рамках бюджета", duration: 1, delay: 800 },
 ];
 
 export default function Counter({ variant = "default" }: CounterProps) {

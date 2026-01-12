@@ -15,7 +15,7 @@ export default function ProfessionalConstruction() {
         {/* Heading */}
         <div className="text-center mb-16 px-4">
           <SectionHeader
-            title="Ww Provide professional construction"
+            title="Мы предоставляем профессиональное строительство"
             colors={{ "3+": "#FC5A11" }}
             className="xl:max-w-[70%] mx-auto"
             titleClass="!justify-center"
@@ -44,7 +44,7 @@ export default function ProfessionalConstruction() {
                   activeProject === project.id ? "text-white duration-200" : "text-secondary duration-200"
                 }`}
               >
-                Location: {project.location}
+                Местоположение: {project.location}
               </p>
               <p
                 className={`mt-3 text-sm 2xl:text-base font-inter leading-6 ${

@@ -65,7 +65,7 @@ export default function Hero() {
                 <div className="grid grid-cols-12 gap-4 md:gap-10 lg:gap-6">
                     <div className="col-span-12 md:col-span-6 lg:col-span-7 space-y-4 md:space-y-6">
                         <div className="text-center md:text-left">
-                            <h4 className="uppercase text-xs md:text-base" data-aos="fade-down">Construction Company</h4>
+                            <h4 className="uppercase text-xs md:text-base" data-aos="fade-down">Строительная компания</h4>
                             <Image
                                 src={HeroDotLiner.src}
                                 alt="Hero Dot Liner"
@@ -75,19 +75,19 @@ export default function Hero() {
                             />
                         </div>
                         <SectionHeader
-                            title="Designing Your Dream"
+                            title="Проектируем вашу мечту"
                             colors={{"0": "#FC5A11"}}
                             className="!mb-2"
                             titleClass="text-6xl lg:text-[80px] xl:text-[120px] 2xl:text-168 tracking-[-4px] xl:tracking-[-8px]"
                         />
                         <div className="mt-6 md:mt-8 flex flex-col lg:flex-row gap-4 lg:gap-6" data-aos="fade-up">
                             <PrimaryButton
-                                text="Get a Site Plan Estimate"
+                                text="Получить оценку плана участка"
                                 href="/contact"
                                 className="w-full lg:w-auto"
                             />
                             <PrimaryButton
-                                text="Get A Free Consultation"
+                                text="Получить бесплатную консультацию"
                                 href="/contact"
                                 className="bg-transparent !text-secondary hover:!text-white border border-secondary before:bg-secondary w-full lg:w-auto"
                             />
@@ -106,13 +106,13 @@ export default function Hero() {
                     </div>
                     <div className="col-span-12 md:col-span-6 lg:col-span-5 xl:col-span-4 2xl:col-span-3 h-full flex flex-col justify-between lg:pt-[10%] 2xl:pt-[25%]">
                         <div className="flex flex-col items-center md:items-start justify-center md:justify-start text-center md:text-left">
-                            <p data-aos="fade-up">SurveyRidge is here to build your construction for the country gained century of development in new era of machine.</p>
+                            <p data-aos="fade-up">SurveyRidge здесь, чтобы построить ваше строительство для страны, получившей век развития в новую эру машин.</p>
                             <div 
                                 ref={circularTextRef}
                                 className='flex justify-center relative w-full max-w-fit rounded-full border border-primary-light-shade bg-offWhite p-0 mt-6 2xl:mt-8'
                             >
                                 <CircularText
-                                    text=" AN AWARD WINNING COMPANY"
+                                    text=" НАГРАЖДЕННАЯ КОМПАНИЯ"
                                     onHover="speedUp"
                                     spinDuration={15}
                                     className='!w-[130px] !h-[130px] lg:!w-[150px] lg:!h-[150px] xl:!w-[170px] xl:!h-[170px]'
@@ -144,7 +144,7 @@ export default function Hero() {
                                     />
                                 ))}
                             </div>
-                            <h5 className='text-base text-secondary font-medium text-center md:text-left' data-aos="fade-left">Reviews from <CountUp from={0} to={1.2} duration={1} />K clients</h5 >
+                            <h5 className='text-base text-secondary font-medium text-center md:text-left' data-aos="fade-left">Отзывы от <CountUp from={0} to={1.2} duration={1} />К клиентов</h5 >
                         </div>
                     </div>
                 </div>

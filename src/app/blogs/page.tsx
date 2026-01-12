@@ -5,7 +5,7 @@ import { Metadata } from 'next';
 import React from 'react'
 
 export const metadata: Metadata = {
-  title: "Blog Archive - SurveyRidge",
+  title: "Архив блога - SurveyRidge",
 };
 
 export default function Blogs() {

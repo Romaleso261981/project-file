@@ -16,8 +16,8 @@ export default function AboutIndex() {
             <MissionVision />
             <Team />
             <CtaSection 
-                title="Ready to Make Confident Property"
-                description="Whether you're buying, building, investing, or resolving a dispute SurveyRidge is here to provide the clarity you need."
+                title="Готовы уверенно работать с недвижимостью"
+                description="Покупаете ли вы, строите, инвестируете или решаете спор, SurveyRidge здесь, чтобы предоставить необходимую ясность."
                 image={CtaImage1.src}
             />
             <FaqSection variant='global' />

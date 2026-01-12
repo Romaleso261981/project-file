@@ -22,13 +22,13 @@ export default function ProjectCta() {
                     {/* Text */}
                     <div className="md:col-span-6 lg:col-span-7 text-center md:text-left py-14 xl:py-28 order-1 md:order-2">
                         <SectionHeader
-                            title="Have a Property of Project in Mind?"
-                            description="From residential surveys to large-scale developments we're ready to support your next move with expertise and precision."
+                            title="Есть идея проекта недвижимости?"
+                            description="От жилых съемок до крупномасштабных застроек мы готовы поддержать ваш следующий шаг с экспертизой и точностью."
                             titleClass="text-white"
                             descriptionClass="text-white xl:max-w-[65%]"
                         />
                         <PrimaryButton 
-                            text="Get A Free Consultation" 
+                            text="Получить бесплатную консультацию" 
                             href="/contact" 
                             className="bg-white !text-primary hover:bg-secondary hover:!text-white" 
                         />

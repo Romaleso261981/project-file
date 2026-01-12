@@ -8,10 +8,10 @@ export default function ProjectHero() {
         <section className='pb-0'>
             <div className="container">
                 <SectionHeader 
-                    title="SurveyRidge’s Projects" 
+                    title="Проекты SurveyRidge" 
                     colors={{"1": "#FC5A11"}} 
                     description={[
-                        "At SurveyRidge, we provide a complete range of property surveying services tailored to buyers, sellers, investors, and developers. Our reports are accurate, jargon-free, and delivered with the clarity you need to make smart, confident property decisions."
+                        "В SurveyRidge мы предоставляем полный спектр услуг по геодезии недвижимости, адаптированных для покупателей, продавцов, инвесторов и застройщиков. Наши отчеты точны, без жаргона и предоставляются с ясностью, необходимой для принятия умных, уверенных решений о недвижимости."
                     ]}
                     className='xl:max-w-[85%]'
                 />

@@ -9,7 +9,7 @@ export default function BlogIndex() {
         <section className='pb-0'>
             <div className="container">
                 <SectionHeader
-                    title='Blog Archive'
+                    title='Архив блога'
                     titleClass='!justify-center'
                     className='mb-8 xl:mb-16'
                     colors={{ "1+": "#FC5A11" }}

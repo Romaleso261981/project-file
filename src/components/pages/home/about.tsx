@@ -12,16 +12,16 @@ import CircularText from '@/components/animation/circular-text'
 
 const AboutData = [
     {
-        title: "Clarity in Every Line",
-        description: "Every measurement, boundary, and elevation is backed by rigorous fieldwork and QA.",
+        title: "Ясность в каждой линии",
+        description: "Каждое измерение, граница и высота подтверждены тщательной полевой работой и контролем качества.",
     },
     {
-        title: "Tech-Driven Accuracy",
-        description: "We use modern tools to capture, process, and deliver real-world site data – faster and more reliably.",
+        title: "Точность на основе технологий",
+        description: "Мы используем современные инструменты для захвата, обработки и доставки реальных данных участка – быстрее и надежнее.",
     },
     {
-        title: "Precision Built Into Every Project",
-        description: "Our team understands regional code, permitting processes, and land challenges in cities and counties.",
+        title: "Точность, заложенная в каждый проект",
+        description: "Наша команда понимает региональные нормы, процессы получения разрешений и проблемы с землей в городах и округах.",
     }
 ]
 
@@ -33,7 +33,7 @@ export default function About() {
                     <div className="grid grid-cols-12 gap-4 md:gap-6 items-center">
                         <div className='col-span-12 md:col-span-5'>
                             <SectionHeader 
-                                title="Precision Built Into Every Project" 
+                                title="Точность, заложенная в каждый проект" 
                                 colors={{ "4+": "#FC5A11" }}
                                 className='!mb-4 pr-10'
                             />
@@ -57,7 +57,7 @@ export default function About() {
                                 })}
                             </div>
                             <div data-aos="fade-up">
-                                <PrimaryButton text="Visit Our Sites" href='/contact' className='mt-10'/>
+                                <PrimaryButton text="Посетить наши сайты" href='/contact' className='mt-10'/>
                             </div>
                         </div>
                         <div className="col-span-12 md:col-span-7 space-y-8 xl:space-y-14"> 
@@ -66,7 +66,7 @@ export default function About() {
                                     <div className='absolute top-[60%] left-1/2 xl:left-[35%] -translate-x-1/2 z-10'>
                                         <div className='flex justify-center relative w-full max-w-fit rounded-full border border-primary-light-shade bg-offWhite p-2'>
                                             <CircularText
-                                                text=" AN AWARD WINNING COMPANY"
+                                                text=" НАГРАЖДЕННАЯ КОМПАНИЯ"
                                                 onHover="speedUp"
                                                 spinDuration={20}
                                                 className='!w-[130px] !h-[130px] lg:!w-[150px] lg:!h-[150px] xl:!w-[220px] xl:!h-[220px]'

@@ -10,7 +10,7 @@ import CtaImage1 from '@/assets/images/cta-image-2.png';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "SurveyRidge - Blog Details - Laboratory and Research",
+  title: "SurveyRidge - Детали блога - Лаборатория и исследования",
 }
 
 export async function generateStaticParams() { 
@@ -28,7 +28,7 @@ export default async function BlogDetailsIndex({
 	const blog = Blogs.find((s) => s.slug === slug);
 
 	if (!blog) {
-		return <p className="container py-10">Blogs not found.</p>;
+		return <p className="container py-10">Блог не найден.</p>;
 	}
 	return (
 		<ClientWrapper>
@@ -53,7 +53,7 @@ export default async function BlogDetailsIndex({
                                 <p className='text-sm'>{blog.author}</p>
                             </div>
                             <p className='px-2 md:px-6 text-sm'>{blog.date}</p>
-                            <p className='px-2 md:px-6 text-sm'>4 min read</p>
+                            <p className='px-2 md:px-6 text-sm'>4 мин чтения</p>
                         </div>
                     </div>
                     <div className="grid grid-cols-12 gap-4 md:gap-6 2xl:gap-20">
@@ -73,66 +73,66 @@ export default async function BlogDetailsIndex({
                             </div>
 
                             <div className='space-y-2' data-aos="fade-up">
-                                <h5 className='d2c_medium_title font-bold'>Why Planning Matters Before You Build</h5>
-                                <p>Pre-construction planning - including boundary surveys, zoning checks, and site layout - establishes a sound baseline. Accurate data from the start mitigates cost overruns and construction delays.</p>
+                                <h5 className='d2c_medium_title font-bold'>Почему планирование важно перед строительством</h5>
+                                <p>Предстроительное планирование - включая межевые съемки, проверки зонирования и планировку участка - устанавливает надежную основу. Точные данные с самого начала снижают перерасход средств и задержки в строительстве.</p>
                             </div>
 
                             <div className='space-y-2' data-aos="fade-up">
-                                <h5 className='d2c_medium_title font-bold'>Key Pre-Build Roadmap</h5>
-                                <p>Pre-construction planning - including boundary surveys, zoning checks, and site layout - establishes a sound baseline. Accurate data from the start mitigates cost overruns and construction delays.</p>
-                            </div>
-
-                            <div className='space-y-2' data-aos="fade-up">
-                                <div className='flex items-center gap-2'>
-                                    <GoDotFill className='text-primary' />
-                                    <h6 className='d2c_small_title'>Step 01:</h6>
-                                </div>
-                                <div>
-                                    <h6 className='d2c_small_title'>Define Your Priorities</h6>
-                                    <p>Understand your goals - budget, timing, permitted land use - and any constraints like terrain or site access.</p>
-                                </div>
+                                <h5 className='d2c_medium_title font-bold'>Ключевая дорожная карта перед строительством</h5>
+                                <p>Предстроительное планирование - включая межевые съемки, проверки зонирования и планировку участка - устанавливает надежную основу. Точные данные с самого начала снижают перерасход средств и задержки в строительстве.</p>
                             </div>
 
                             <div className='space-y-2' data-aos="fade-up">
                                 <div className='flex items-center gap-2'>
                                     <GoDotFill className='text-primary' />
-                                    <h6 className='d2c_small_title'>Step 02:</h6>
+                                    <h6 className='d2c_small_title'>Шаг 01:</h6>
                                 </div>
                                 <div>
-                                    <h6 className='d2c_small_title'>Explore Site Possibilities</h6>
-                                    <p>Visit the site early. Think about slope, drainage, vegetation, access points, and how land orientation may affect utilities.</p>
+                                    <h6 className='d2c_small_title'>Определите ваши приоритеты</h6>
+                                    <p>Поймите ваши цели - бюджет, сроки, разрешенное использование земли - и любые ограничения, такие как рельеф или доступ к участку.</p>
                                 </div>
                             </div>
 
                             <div className='space-y-2' data-aos="fade-up">
                                 <div className='flex items-center gap-2'>
                                     <GoDotFill className='text-primary' />
-                                    <h6 className='d2c_small_title'>Step 03:</h6>
+                                    <h6 className='d2c_small_title'>Шаг 02:</h6>
                                 </div>
                                 <div>
-                                    <h6 className='d2c_small_title'>Choose a Survey Type</h6>
-                                    <p>Decide whether your project requires a boundary, topographic, ALTA‑NSPS, or as‑built survey. Each serves a different regulatory.</p>
+                                    <h6 className='d2c_small_title'>Изучите возможности участка</h6>
+                                    <p>Посетите участок заранее. Подумайте о склоне, дренаже, растительности, точках доступа и о том, как ориентация земли может повлиять на коммуникации.</p>
                                 </div>
                             </div>
 
                             <div className='space-y-2' data-aos="fade-up">
                                 <div className='flex items-center gap-2'>
                                     <GoDotFill className='text-primary' />
-                                    <h6 className='d2c_small_title'>Step 04:</h6>
+                                    <h6 className='d2c_small_title'>Шаг 03:</h6>
                                 </div>
                                 <div>
-                                    <h6 className='d2c_small_title'>Align Design with Permits</h6>
-                                    <p>Produce a permit-ready site plan, setbacks, utility routing, and grading layout. Compliance with local regulations is easier.</p>
+                                    <h6 className='d2c_small_title'>Выберите тип съемки</h6>
+                                    <p>Решите, требует ли ваш проект межевой, топографической, ALTA‑NSPS или исполнительной съемки. Каждая служит разным нормативным целям.</p>
                                 </div>
                             </div>
 
                             <div className='space-y-2' data-aos="fade-up">
-                                <h5 className='d2c_medium_title font-bold'>What SurveyRidge Does Differently</h5>
-                                <p>SurveyRidge brings licensed expertise, GPS and drone-based survey methods, and CAD-ready documentation. We streamline communication, minimize revisions, and deliver complete, clear data that supports developers, architects, and property planners.</p>
+                                <div className='flex items-center gap-2'>
+                                    <GoDotFill className='text-primary' />
+                                    <h6 className='d2c_small_title'>Шаг 04:</h6>
+                                </div>
+                                <div>
+                                    <h6 className='d2c_small_title'>Согласуйте дизайн с разрешениями</h6>
+                                    <p>Создайте готовый к получению разрешений план участка, отступы, маршрутизацию коммуникаций и планировку планировки. Соответствие местным нормам становится проще.</p>
+                                </div>
+                            </div>
+
+                            <div className='space-y-2' data-aos="fade-up">
+                                <h5 className='d2c_medium_title font-bold'>Что SurveyRidge делает по-другому</h5>
+                                <p>SurveyRidge привносит лицензированную экспертизу, методы съемки на основе GPS и дронов, а также документацию, готовую для САПР. Мы упрощаем коммуникацию, минимизируем переработки и предоставляем полные, четкие данные, которые поддерживают застройщиков, архитекторов и планировщиков недвижимости.</p>
                             </div>
                         </div>
                         <div className="col-span-12 md:col-span-4 mt-6 md:mt-0">
-                            <h4 className='d2c_medium_title xl:text-[34px] uppercase tracking-normal mb-8' data-aos="fade-down">Popular Blogs</h4>
+                            <h4 className='d2c_medium_title xl:text-[34px] uppercase tracking-normal mb-8' data-aos="fade-down">Популярные блоги</h4>
                             <div className='space-y-6 md:space-y-8'>
                                 {Blogs.filter((b) => b.slug !== slug).slice(0, 3).map((blog, idx) => {
                                     return (
@@ -152,7 +152,7 @@ export default async function BlogDetailsIndex({
 
                                             <div className="flex flex-col pt-2 xl:pt-4 space-y-2 xl:space-y-4">
                                                 <div className="flex gap-8" data-aos="fade-up">
-                                                    <p>Author</p>
+                                                    <p>Автор</p>
                                                     <p>{blog.author}</p>
                                                 </div>
 
@@ -173,8 +173,8 @@ export default async function BlogDetailsIndex({
 
             <section className='pb-5'>
                 <CtaSection 
-                    title="Turn Property Plans into Reality, Confidently"
-                    description="Get Your Free Consultation Now"
+                    title="Превратите планы недвижимости в реальность, уверенно"
+                    description="Получите бесплатную консультацию сейчас"
                     image={CtaImage1.src}
                     descriptionClass='!font-bold text-base lg:text-2xl xl:text-3xl font-primary'
                     className='pt-5 lg:pt-10 2xl:pt-20'

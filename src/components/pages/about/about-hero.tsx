@@ -10,16 +10,16 @@ export default function AboutHero() {
         <section className='pb-0'>
             <div className="container">
                 <SectionHeader 
-                    title="About SurveyRidge" 
+                    title="О SurveyRidge" 
                     colors={{"1": "#FC5A11"}} 
                     description={[
-                        "Our team of licensed engineers and registered surveyors brings years of experience across residential, commercial, agricultural land, and renovation projects, Combine modern tools like drone scanning, GPS positioning, and 3D modeling with expert workflow processes to make your land plans work.",
-                        "At SurveyRidge, we’re committed to transforming ideas into dependable, code-compliant site plans and surveying solutions. Our focus on quality, safety, and innovation ensures we deliver precision for every project big or small."
+                        "Наша команда лицензированных инженеров и зарегистрированных геодезистов привносит годы опыта в жилые, коммерческие, сельскохозяйственные и реконструкционные проекты. Мы сочетаем современные инструменты, такие как сканирование дронами, GPS-позиционирование и 3D-моделирование, с экспертными рабочими процессами, чтобы ваши планы участков работали.",
+                        "В SurveyRidge мы стремимся превращать идеи в надежные, соответствующие нормам планы участков и геодезические решения. Наш фокус на качестве, безопасности и инновациях гарантирует, что мы обеспечиваем точность для каждого проекта, большого или малого."
                     ]}
                     className='xl:max-w-[85%]'
                 />
                 <div className='mb-10 text-center md:text-left' data-aos="fade-up">
-                    <PrimaryButton text="Visit Our Sites" href="/contact" />
+                    <PrimaryButton text="Посетить наши сайты" href="/contact" />
                 </div>
                 <Counter />
             </div>

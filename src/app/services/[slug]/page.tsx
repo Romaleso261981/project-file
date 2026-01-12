@@ -14,7 +14,7 @@ import serviceDetailsImage7 from '@/assets/images/service-details-image-7.jpg';
 import uilderEngineerIcon from '@/assets/images/builder_engineer_icon.svg';
 
 export const metadata: Metadata = {
-  title: "Services Details - SurveyRidge - Property Surveyors Template",
+  title: "Детали услуг - SurveyRidge - Шаблон геодезистов недвижимости",
 }
 
 export async function generateStaticParams() { 
@@ -32,7 +32,7 @@ export default async function ServicesDetailsIndex({
 	const services = servicesData.find((s) => s.slug === slug);
 
 	if (!services) {
-		return <p className="container py-10">Services Item Not Found.</p>;
+		return <p className="container py-10">Услуга не найдена.</p>;
 	}
 	return (
 		<ClientWrapper>
@@ -43,7 +43,7 @@ export default async function ServicesDetailsIndex({
                             title={services.name}
                             className='!mb-6'
                         />
-                        <p data-aos="fade-up">At SurveyRidge, construction is more than just delivering a structure - it’s about creating spaces that last, improve communities, and bring visions to life. We want every employee, partner, and trade professional to feel part of the common good, working as one cohesive team.</p>
+                        <p data-aos="fade-up">В SurveyRidge строительство - это больше, чем просто создание структуры - это создание пространств, которые служат долго, улучшают сообщества и воплощают видения в жизнь. Мы хотим, чтобы каждый сотрудник, партнер и торговый специалист чувствовали себя частью общего блага, работая как одна сплоченная команда.</p>
                         <div>
                             <Image
                                 src={services.image}
@@ -58,9 +58,9 @@ export default async function ServicesDetailsIndex({
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 xl:gap-16 items-center">
                         <div className='space-y-7 flex flex-col justify-center order-1'>
                             <SectionHeader
-                                title="Our Approach"
+                                title="Наш подход"
                                 colors={{ "1+": "#FC5A11" }}
-                                description="From pre-construction planning to project completion, we believe in a hands-on, transparent, and collaborative process."
+                                description="От предстроительного планирования до завершения проекта мы верим в практический, прозрачный и совместный процесс."
                                 className='!mb-6'
                             />
                             <ul className='space-y-4' data-aos="fade-up">
@@ -72,7 +72,7 @@ export default async function ServicesDetailsIndex({
                                         height={16} 
                                         className='max-w-[16px] max-h-[16px] h-full object-contain relative top-.5' 
                                     />
-                                    We work closely with clients, engineers to maintain open communication
+                                    Мы тесно работаем с клиентами и инженерами для поддержания открытой коммуникации
                                 </li>
                                 <li className='flex gap-2 items-baseline'>
                                     <Image 
@@ -82,7 +82,7 @@ export default async function ServicesDetailsIndex({
                                         height={16} 
                                         className='max-w-[16px] max-h-[16px] h-full object-contain relative top-.5' 
                                     />
-                                    Strict adherence to safety guidelines and regulatory codes is built into every project.
+                                    Строгое соблюдение правил безопасности и нормативных кодексов заложено в каждый проект.
                                 </li>
                             </ul>
                         </div>
@@ -107,7 +107,7 @@ export default async function ServicesDetailsIndex({
 
                         <div className='space-y-7 flex flex-col justify-center order-3 md:order-4'>
                             <SectionHeader
-                                title="What We Build"
+                                title="Что мы строим"
                                 colors={{ "2+": "#FC5A11" }}
                                 className='!mb-6'
                             />
@@ -120,7 +120,7 @@ export default async function ServicesDetailsIndex({
                                         height={16} 
                                         className='max-w-[16px] max-h-[16px] h-full object-contain relative top-.5' 
                                     />
-                                    Commercial Projects – Offices, retail spaces, and industrial developments.
+                                    Коммерческие проекты – Офисы, торговые площади и промышленные застройки.
                                 </li>
                                 <li className='flex gap-2 items-baseline'>
                                     <Image 
@@ -130,7 +130,7 @@ export default async function ServicesDetailsIndex({
                                         height={16} 
                                         className='max-w-[16px] max-h-[16px] h-full object-contain relative top-.5' 
                                     />
-                                    Residential Communities - Subdivisions, condominiums, and custom housing projects.
+                                    Жилые сообщества - Подразделения, кондоминиумы и индивидуальные жилищные проекты.
                                 </li>
                                 <li className='flex gap-2 items-baseline'>
                                     <Image 
@@ -140,7 +140,7 @@ export default async function ServicesDetailsIndex({
                                         height={16} 
                                         className='max-w-[16px] max-h-[16px] h-full object-contain relative top-.5' 
                                     />
-                                    Renovation & Remodelling – Upgrading spaces to meet modern standards.
+                                    Реконструкция и перепланировка – Модернизация пространств для соответствия современным стандартам.
                                 </li>
                                 <li className='flex gap-2 items-baseline'>
                                     <Image 
@@ -150,14 +150,14 @@ export default async function ServicesDetailsIndex({
                                         height={16} 
                                         className='max-w-[16px] max-h-[16px] h-full object-contain relative top-.5' 
                                     />
-                                    Infrastructure Support – Roads, drainage systems, and utilities to support.
+                                    Инфраструктурная поддержка – Дороги, дренажные системы и коммуникации для поддержки.
                                 </li>
                             </ul>
                         </div>
                         
                         <div className='space-y-7 flex flex-col justify-center order-5'>
                             <SectionHeader
-                                title="Why Choose Us"
+                                title="Почему выбирают нас"
                                 colors={{ "1+": "#FC5A11" }}
                                 className='!mb-6'
                             />
@@ -170,7 +170,7 @@ export default async function ServicesDetailsIndex({
                                         height={16} 
                                         className='max-w-[16px] max-h-[16px] h-full object-contain relative top-.5' 
                                     />
-                                    Experienced teams with a track record across diverse project scales
+                                    Опытные команды с послужным списком в различных масштабах проектов
                                 </li>
                                 <li className='flex gap-2 items-baseline'>
                                     <Image 
@@ -180,7 +180,7 @@ export default async function ServicesDetailsIndex({
                                         height={16} 
                                         className='max-w-[16px] max-h-[16px] h-full object-contain relative top-.5' 
                                     />
-                                    Integration of surveying, planning, and engineering under one roof
+                                    Интеграция геодезии, планирования и инженерии под одной крышей
                                 </li>
                                 <li className='flex gap-2 items-baseline'>
                                     <Image 
@@ -190,7 +190,7 @@ export default async function ServicesDetailsIndex({
                                         height={16} 
                                         className='max-w-[16px] max-h-[16px] h-full object-contain relative top-.5' 
                                     />
-                                    On-time, on-budget delivery with complete transparency
+                                    Доставка вовремя, в рамках бюджета с полной прозрачностью
                                 </li>
                                 <li className='flex gap-2 items-baseline'>
                                     <Image 
@@ -200,7 +200,7 @@ export default async function ServicesDetailsIndex({
                                         height={16} 
                                         className='max-w-[16px] max-h-[16px] h-full object-contain relative top-.5' 
                                     />
-                                   Strong partnerships with reliable subcontractors and trades
+                                   Прочные партнерства с надежными субподрядчиками и торговцами
                                 </li>
                             </ul>
                         </div>
@@ -219,20 +219,20 @@ export default async function ServicesDetailsIndex({
 
                         <div className='order-8'>
                             <SectionHeader
-                                title="Our Team, Our Strength"
+                                title="Наша команда, наша сила"
                                 colors={{ "2+": "#FC5A11" }}
                                 className='!mb-6'
                             />
-                            <p data-aos="fade-up">At the heart of every successful build is a team that works as one. We ensure that architects, engineers, surveyors, builders.</p>
-                            <p data-aos="fade-up">subcontractors align seamlessly - giving you a smooth process and a structure you can trust.</p>
+                            <p data-aos="fade-up">В основе каждого успешного строительства - команда, которая работает как единое целое. Мы обеспечиваем, чтобы архитекторы, инженеры, геодезисты, строители.</p>
+                            <p data-aos="fade-up">субподрядчики согласовывались безупречно - давая вам гладкий процесс и структуру, которой можно доверять.</p>
                         </div>
                     </div>
 
                     <div>
                         <SectionHeader
-                            title="Last Outcome"
+                            title="Финальный результат"
                             colors={{ "1+": "#FC5A11" }}
-                            description="Whether it’s a new development, a community project, or a property upgrade, SurveyRidge brings clarity, expertise, and teamwork to the table."
+                            description="Будь то новая застройка, общественный проект или модернизация недвижимости, SurveyRidge привносит ясность, экспертизу и командную работу."
                             className='!mb-6'
                         />
                         <div>

@@ -17,7 +17,7 @@ export default function CtaSection({
   title,
   description,
   image,
-  buttonText = "Get A Site Estimate",
+  buttonText = "Получить оценку участка",
   buttonHref = "/contact",
   descriptionClass = "",
   className = ""

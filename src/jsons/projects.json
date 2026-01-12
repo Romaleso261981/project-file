@@ -1,30 +1,30 @@
 [
     {
       "id": 1,
-      "title": "Rural Subdivision Layout",
-      "location": "Birmingham",
-      "description": "Completed full-scale surveying and lot plotting for an 80-acre conversion project, enabling phased development with clear easements.",
+      "title": "Планировка сельского подразделения",
+      "location": "Бирмингем",
+      "description": "Выполнена полномасштабная съемка и разбивка участков для проекта конверсии на 80 акрах, обеспечивающая поэтапную застройку с четкими сервитутами.",
       "image": "/images/constgruction-image-1.jpg"
     },
     {
       "id": 2,
-      "title": "Rural Subdivision Layout",
-      "location": "Birmingham",
-      "description": "Completed full-scale surveying and lot plotting for an 80-acre conversion project, enabling phased development with clear easements.",
+      "title": "Планировка сельского подразделения",
+      "location": "Бирмингем",
+      "description": "Выполнена полномасштабная съемка и разбивка участков для проекта конверсии на 80 акрах, обеспечивающая поэтапную застройку с четкими сервитутами.",
       "image": "/images/constgruction-image-2.jpg"
     },
     {
       "id": 3,
-      "title": "Drainage Design Project",
-      "location": "Manchester Suburb",
-      "description": "Engineered a detailed drainage and trench system for a high-rainfall zone, including runoff modeling, stormwater detention design.",
+      "title": "Проект дренажной системы",
+      "location": "Пригород Манчестера",
+      "description": "Разработана детальная дренажная система и система траншей для зоны с высоким уровнем осадков, включая моделирование стока и проектирование задержания ливневых вод.",
       "image": "/images/constgruction-image-1.jpg"
     },
     {
       "id": 4,
-      "title": "Renovation Mapping Project",
-      "location": "Bristol",
-      "description": "Conducted 3D structural scans & retroactive blueprint creation for a historic estate renovation, ensuring accuracy.",
+      "title": "Проект картографирования реконструкции",
+      "location": "Бристоль",
+      "description": "Проведено 3D сканирование конструкций и создание ретроспективных чертежей для реконструкции исторического поместья, обеспечивая точность.",
       "image": "/images/constgruction-image-2.jpg"
     }
   ]

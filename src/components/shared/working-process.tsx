@@ -8,7 +8,7 @@ export default function WorkingProcess() {
         <section>
             <div className="container">
                 <SectionHeader 
-                    title="The SurveyRidge Working Process" 
+                    title="Рабочий процесс SurveyRidge" 
                     colors={{ "2+": "#FC5A11" }}
                     className='md:max-w-1/2' 
                 />

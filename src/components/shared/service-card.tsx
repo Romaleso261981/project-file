@@ -100,12 +100,12 @@ export default function ServiceItem({
               href={`/services/${slug}`}
               className="text-secondary-light underline text-lg mt-4"
             >
-              See Our Service
+              Посмотреть услугу
             </Link>
           ) : (
             <Link href={`/services/${slug}`}>
               <p className="text-secondary-light underline text-lg mt-4 group-hover:text-primary">
-                See Our Service
+                Посмотреть услугу
               </p>
             </Link>
           )}

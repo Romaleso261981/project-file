@@ -82,8 +82,8 @@ export default function FaqSection({ variant = 'global' }: FaqSectionProps) {
                     {/* RIGHT CONTENT (FAQ ACCORDION) */}
                     <div className="col-span-12 lg:col-span-6">
                         <SectionHeader 
-                            title="Everything You Need to Know"
-                            description="Explore our FAQ section to get clear, detailed answers about SurveyRidge’s process, services, timelines, and what you can expect when working with our team of trusted property surveyors."
+                            title="Все, что вам нужно знать"
+                            description="Изучите наш раздел FAQ, чтобы получить четкие, подробные ответы о процессе SurveyRidge, услугах, сроках и о том, чего можно ожидать при работе с нашей командой надежных геодезистов недвижимости."
                             colors={{ "3+": "#FC5A11" }}
                             className="xl:pr-20"
                         />
