@@ -13,8 +13,45 @@ import serviceDetailsImage6 from '@/assets/images/service-details-image-6.jpg';
 import serviceDetailsImage7 from '@/assets/images/service-details-image-7.jpg';
 import uilderEngineerIcon from '@/assets/images/builder_engineer_icon.svg';
 
-export const metadata: Metadata = {
-  title: "Детали услуг - SurveyRidge - Шаблон геодезистов недвижимости",
+const baseUrl = 'https://project-file-woad.vercel.app';
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const service = servicesData.find((s) => s.slug === slug);
+
+  if (!service) {
+    return {
+      title: "Услуга не найдена",
+    };
+  }
+
+  return {
+    title: service.name,
+    description: service.description,
+    keywords: ["услуги", "геодезия", service.name, service.description],
+    alternates: {
+      canonical: `${baseUrl}/services/${slug}/`,
+    },
+    openGraph: {
+      title: `${service.name} - SurveyRidge`,
+      description: service.description,
+      url: `${baseUrl}/services/${slug}/`,
+      images: [
+        {
+          url: `${baseUrl}${service.image}`,
+          width: 1200,
+          height: 630,
+          alt: service.name,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${service.name} - SurveyRidge`,
+      description: service.description,
+      images: [`${baseUrl}${service.image}`],
+    },
+  };
 }
 
 export async function generateStaticParams() { 

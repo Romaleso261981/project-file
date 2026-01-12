@@ -9,8 +9,48 @@ import CtaSection from '@/components/shared/cta';
 import CtaImage1 from '@/assets/images/cta-image-2.png';
 import Link from 'next/link';
 
-export const metadata: Metadata = {
-  title: "SurveyRidge - Детали блога - Лаборатория и исследования",
+const baseUrl = 'https://project-file-woad.vercel.app';
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const blog = Blogs.find((post) => post.slug === slug);
+
+  if (!blog) {
+    return {
+      title: "Статья не найдена",
+    };
+  }
+
+  return {
+    title: blog.title,
+    description: blog.description,
+    keywords: ["блог", "геодезия", "земельные съемки", blog.title],
+    alternates: {
+      canonical: `${baseUrl}/blogs/${slug}/`,
+    },
+    openGraph: {
+      title: blog.title,
+      description: blog.description,
+      url: `${baseUrl}/blogs/${slug}/`,
+      images: [
+        {
+          url: `${baseUrl}${blog.image}`,
+          width: 1200,
+          height: 630,
+          alt: blog.title,
+        },
+      ],
+      type: "article",
+      publishedTime: blog.date,
+      authors: [blog.author],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: blog.title,
+      description: blog.description,
+      images: [`${baseUrl}${blog.image}`],
+    },
+  };
 }
 
 export async function generateStaticParams() { 
