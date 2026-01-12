@@ -4,6 +4,10 @@ import { NextRequest, NextResponse } from 'next/server';
 const TELEGRAM_BOT_TOKEN = "8555898660:AAGACcEFsN5akhBXgtBUowjscQpZl28CMJ8";
 const TELEGRAM_CHAT_ID = "6220290929";
 
+// Runtime configuration for Vercel
+export const runtime = 'edge';
+export const dynamic = 'force-dynamic';
+
 // Функція для отримання chat_id через getUpdates
 async function getChatId(): Promise<string | null> {
   try {
