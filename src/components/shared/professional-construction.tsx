@@ -16,7 +16,7 @@ export default function ProfessionalConstruction() {
         <div className="text-center mb-16 px-4">
           <SectionHeader
             title="Мы предоставляем профессиональное строительство"
-            colors={{ "3+": "#FC5A11" }}
+            colors={{ "3+": "#2563EB" }}
             className="xl:max-w-[70%] mx-auto"
             titleClass="!justify-center"
           />

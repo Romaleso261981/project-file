@@ -12,7 +12,7 @@ export default function HomeBlog() {
                     <div className='px-16 py-10 md:py-24 bg-blog bg-no-repeat bg-cover bg-center text-center lg:text-left'>
                         <SectionHeader
                             title="Инсайты с поля от профессионалов"
-                            colors={{ "5+": "#FC5A11" }}
+                            colors={{ "5+": "#2563EB" }}
                             titleClass='text-offWhite !justify-center lg:!justify-start'
                             className='!mb-6'
                         />

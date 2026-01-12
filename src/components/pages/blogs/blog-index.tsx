@@ -12,7 +12,7 @@ export default function BlogIndex() {
                     title='Архив блога'
                     titleClass='!justify-center'
                     className='mb-8 xl:mb-16'
-                    colors={{ "1+": "#FC5A11" }}
+                    colors={{ "1+": "#2563EB" }}
                 />
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">

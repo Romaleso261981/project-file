@@ -34,7 +34,7 @@ export default function About() {
                         <div className='col-span-12 md:col-span-5'>
                             <SectionHeader 
                                 title="Точность, заложенная в каждый проект" 
-                                colors={{ "4+": "#FC5A11" }}
+                                colors={{ "4+": "#2563EB" }}
                                 className='!mb-4 pr-10'
                             />
                             <div className='mb-10'>

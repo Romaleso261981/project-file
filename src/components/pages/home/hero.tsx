@@ -76,7 +76,7 @@ export default function Hero() {
                         </div>
                         <SectionHeader
                             title="Проектируем вашу мечту"
-                            colors={{"0": "#FC5A11"}}
+                            colors={{"0": "#2563EB"}}
                             className="!mb-2"
                             titleClass="text-6xl lg:text-[80px] xl:text-[120px] 2xl:text-168 tracking-[-4px] xl:tracking-[-8px]"
                         />

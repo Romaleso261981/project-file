@@ -9,7 +9,7 @@ export default function Team() {
             <div className="container">
                 <SectionHeader 
                     title='Познакомьтесь с командой, которая ведет ваш проект'
-                    colors={{"5+": "#FC5A11"}}
+                    colors={{"5+": "#2563EB"}}
                     className='xl:max-w-[80%] 2xl:max-w-1/2' 
                 />
 

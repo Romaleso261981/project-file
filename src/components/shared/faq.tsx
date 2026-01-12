@@ -84,7 +84,7 @@ export default function FaqSection({ variant = 'global' }: FaqSectionProps) {
                         <SectionHeader 
                             title="Все, что вам нужно знать"
                             description="Изучите наш раздел FAQ, чтобы получить четкие, подробные ответы о процессе SurveyRidge, услугах, сроках и о том, чего можно ожидать при работе с нашей командой надежных геодезистов недвижимости."
-                            colors={{ "3+": "#FC5A11" }}
+                            colors={{ "3+": "#2563EB" }}
                             className="xl:pr-20"
                         />
 

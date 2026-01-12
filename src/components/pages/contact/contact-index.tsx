@@ -13,7 +13,7 @@ export default function ContactIndex() {
                 <div className="py-10 px-6 lg:p-20 shadow-[0_0_24px_0_rgba(0,0,0,0.08)] 2xl:max-w-[80%] mx-auto space-y-10">
                     <SectionHeader
                         title='Давайте работать вместе'
-                        colors={{ "2+": "#FC5A11" }}
+                        colors={{ "2+": "#2563EB" }}
                         titleClass="!justify-center"
                     />
                     <ContactForm />

@@ -96,7 +96,7 @@ export default async function ServicesDetailsIndex({
                         <div className='space-y-7 flex flex-col justify-center order-1'>
                             <SectionHeader
                                 title="Наш подход"
-                                colors={{ "1+": "#FC5A11" }}
+                                colors={{ "1+": "#2563EB" }}
                                 description="От предстроительного планирования до завершения проекта мы верим в практический, прозрачный и совместный процесс."
                                 className='!mb-6'
                             />
@@ -145,7 +145,7 @@ export default async function ServicesDetailsIndex({
                         <div className='space-y-7 flex flex-col justify-center order-3 md:order-4'>
                             <SectionHeader
                                 title="Что мы строим"
-                                colors={{ "2+": "#FC5A11" }}
+                                colors={{ "2+": "#2563EB" }}
                                 className='!mb-6'
                             />
                             <ul className='space-y-4' data-aos="fade-up">
@@ -195,7 +195,7 @@ export default async function ServicesDetailsIndex({
                         <div className='space-y-7 flex flex-col justify-center order-5'>
                             <SectionHeader
                                 title="Почему выбирают нас"
-                                colors={{ "1+": "#FC5A11" }}
+                                colors={{ "1+": "#2563EB" }}
                                 className='!mb-6'
                             />
                             <ul className='space-y-4' data-aos="fade-up">
@@ -257,7 +257,7 @@ export default async function ServicesDetailsIndex({
                         <div className='order-8'>
                             <SectionHeader
                                 title="Наша команда, наша сила"
-                                colors={{ "2+": "#FC5A11" }}
+                                colors={{ "2+": "#2563EB" }}
                                 className='!mb-6'
                             />
                             <p data-aos="fade-up">В основе каждого успешного строительства - команда, которая работает как единое целое. Мы обеспечиваем, чтобы архитекторы, инженеры, геодезисты, строители.</p>
@@ -268,7 +268,7 @@ export default async function ServicesDetailsIndex({
                     <div>
                         <SectionHeader
                             title="Финальный результат"
-                            colors={{ "1+": "#FC5A11" }}
+                            colors={{ "1+": "#2563EB" }}
                             description="Будь то новая застройка, общественный проект или модернизация недвижимости, SurveyRidge привносит ясность, экспертизу и командную работу."
                             className='!mb-6'
                         />

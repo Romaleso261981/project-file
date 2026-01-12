@@ -77,7 +77,7 @@ export default async function BlogDetailsIndex({
                     <div className='md:max-w-3/4 2xl:max-w-[55%]'>
                         <SectionHeader
                             title={blog.title}
-                            colors={{"4+": "#FC5A11"}}
+                            colors={{"4+": "#2563EB"}}
                             titleClass='!justify-start'
                         />
 

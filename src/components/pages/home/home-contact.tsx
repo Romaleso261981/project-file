@@ -13,7 +13,7 @@ export default function HomeContact() {
                         <div className='lg:max-w-[70%]'>
                             <SectionHeader 
                                 title='Свяжитесь с нами'    
-                                colors={{ "3+": "#FC5A11" }} 
+                                colors={{ "3+": "#2563EB" }} 
                                 className='!mb-4'
                             />
                             <Image 
@@ -49,7 +49,7 @@ export default function HomeContact() {
                         <p className='text-center md:text-left'>Мы хотим, чтобы каждый сотрудник и торговый партнер чувствовали, что они являются частью общего блага, каждый сотрудник и торговый партнер чувствуют, что они являются частью общего блага</p>
                         <SectionHeader
                             title='Давайте работать вместе'
-                            colors={{ "3+": "#FC5A11" }}
+                            colors={{ "3+": "#2563EB" }}
                             className='!my-8'
                         />
                         <ContactForm />

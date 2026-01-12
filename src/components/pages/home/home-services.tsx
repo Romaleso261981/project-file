@@ -21,7 +21,7 @@ export default function HomeServices() {
                     <div className="col-span-12 lg:col-span-6">
                         <SectionHeader
                             title='Что мы предлагаем'
-                            colors={{ "2+": "#FC5A11" }}
+                            colors={{ "2+": "#2563EB" }}
                             description='Мы хотим, чтобы каждый сотрудник и торговый партнер чувствовали, что они являются частью общего блага и сплоченной команды. Мы помогаем нашим командам формировать более сильные'
                             className='!mb-6'
                         />
