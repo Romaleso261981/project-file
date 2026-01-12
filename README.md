@@ -29,8 +29,36 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Telegram Bot Integration
+
+Проект інтегровано з Telegram ботом для отримання замовлень з форми контакту.
+
+### Налаштування Telegram бота:
+
+1. **Створіть файл `.env.local`** в корені проекту:
+```bash
+TELEGRAM_BOT_TOKEN=8555898660:AAGACcEFsN5akhBXgtBUowjscQpZl28CMJ8
+TELEGRAM_CHAT_ID=ваш_chat_id
+```
+
+2. **Отримання Chat ID:**
+   - Варіант 1: Надішліть будь-яке повідомлення вашому боту в Telegram, система спробує автоматично отримати chat_id
+   - Варіант 2: Відкрийте в браузері: `https://api.telegram.org/bot8555898660:AAGACcEFsN5akhBXgtBUowjscQpZl28CMJ8/getUpdates`
+   - Знайдіть `"chat":{"id":123456789}` - це ваш chat_id
+   - Скопіюйте число і вставте в `TELEGRAM_CHAT_ID`
+
+3. **Перезапустіть сервер розробки** після додавання змінних оточення.
+
+### Як це працює:
+
+- Коли користувач заповнює форму контакту на сайті, дані відправляються на API endpoint `/api/telegram`
+- API формує красиве повідомлення з даними замовлення і відправляє його в Telegram
+- Ви отримуєте повідомлення з усіма деталями замовлення
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+**Важливо:** При деплої на Vercel додайте змінні оточення `TELEGRAM_BOT_TOKEN` та `TELEGRAM_CHAT_ID` в налаштуваннях проекту.

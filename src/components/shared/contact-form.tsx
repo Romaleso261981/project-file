@@ -24,11 +24,32 @@ export default function ContactForm() {
 
     const selectedService = watch('serviceRequired', '');
 
-    const onSubmit = async () => {
+    const onSubmit = async (data: ContactFormInputs) => {
         try {
-            Toast.success('Ваша информация отправлена!');
-            reset();
-        } catch {
+            const response = await fetch('/api/telegram', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: data.nameRequired,
+                    email: data.emailRequired,
+                    phone: data.numberRequired,
+                    service: data.serviceRequired,
+                    message: data.messageRequired,
+                }),
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                Toast.success('Ваша информация отправлена!');
+                reset();
+            } else {
+                Toast.error(result.error || 'Что-то пошло не так. Пожалуйста, попробуйте снова.');
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
             Toast.error('Что-то пошло не так. Пожалуйста, попробуйте снова.');
         }
     };
